@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="../cssBootstrap/bootstrap.css">
+        <link type="text/css" rel="stylesheet" href="../cssArquivos/estilo.css">
+        <link rel="shortcut icon" href="../icones/favicon.ico" type="image/x-icon">
+
+        <title>Entrar</title>
+    </head>
+    <body>
+        <div id="conteudo" class="pb-5">
+            <div class="row justify-content-start">
+                <div class="col-3 mt-5 logo-float">
+                    <a href="index.html" class="navbar-brand">
+                        <img id="logo" src="../imgs/circulosolidario.png" alt="Círculo Solidário"> Círculo Solidário
+                    </a>
+                </div>
+                <div class="col-6 mt-5 form-login pb-2">
+                    <p class="fs-3 pb-0 pt-3 pb-2">Faça login</p>
+                    <div class="mb-3 pb-0">
+                        <label for="formdoador">
+                            <input onclick="formdoador()" id="formdoador" type="radio" name="cadastro" value="Represento Doador">
+                            Represento Doador</label>
+                    </div>
+                    <form id="formularioD" action="home.html" method="get">
+                        <div class="col-md-6">
+                            <label for="email-doador" class="form-label pb-0">
+                            Email
+                            </label>
+                            <input type="text" class="form-control" name="email" id="email-doador" required>
+                        </div>
+                        <div class="col-md-5">
+                            <label for="senha-doador" class="form-label pb-0">
+                                Senha
+                            </label>
+                            <input type="password" class="form-control" name="senha" id="senha-doador" required>
+                        </div>
+                        <button class="botao btn-primary">Entrar</button>
+                    </form>
+                    
+                    <div class="mb-3 pb-0">
+                        <label>
+                            <input onclick="forminstituicao()" type="radio" name="cadastro" value="Represento Instituição">
+                            Represento Instituição
+                        </label>
+                    </div>
+
+                    <form id="formularioI" action="perfil_inst.html" method="get">
+                        <div class="col-md-5">
+                            <label for="cnpj" class="form-label pb-0">
+                                CNPJ
+                            </label>
+                            <input type="text" class="form-control" name="cnpj" id="cnpj" onkeypress="$(this).mask('00.000.000/0000-00')" placeholder="00.000.000/0000-00" required>
+                        </div>
+                        <div class="col-md-5">
+                            <label for="senha-doador" class="form-label pb-0">
+                                Senha
+                            </label>
+                            <input type="password" class="form-control" name="senha" id="senha-doador" required>
+                        </div>
+                        <button class="botao btn-primary">Entrar</button> 
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <section class="row pb-0">
+                <article id="informacoes" class="col-5 mx-auto">
+                    <p>Fundadoras:</p>
+                    <img src="../imgs/ana-100.jpeg" alt="">
+                    <p class="pb-0"> Ana Paula Rosa, Estudante do Instituto Federal de Educação, Ciência e Tecnologia (IFSP) em Bragança Paulista, SP.</p>
+                    <img src="../imgs/tais-100.jpg" alt="">
+                    <p class="pb-0">Taís Barbosa Rodrigues, Estudante do Instituto Federal de Educação, Ciência e Tecnologia (IFSP) em Bragança Paulista, SP. </p>
+                </article>
+                <article id="comunicacao" class="col-5 mx-auto">
+                    <p>Comunicação:</p>
+                    <p class="pb-0">E-mail: <a href="mailto:conexaosolidariaa@gmail.com">conexaosolidariaa@gmail.com</a></p>
+                </article>
+                <p class="text-sm-center pb-0">Desenvolvido por... 2022...</p>
+            </section>
+        </footer>
+        <script src="../jsArquivos/scripts.js"></script>
+    </body>
+</html>

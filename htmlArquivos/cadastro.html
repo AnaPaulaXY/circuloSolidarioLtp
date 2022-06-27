@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="../cssBootstrap/bootstrap.css">
+		<link type="text/css" rel="stylesheet" href="../cssArquivos/estilo.css">
+		<link rel="shortcut icon" href="../icones/favicon.ico" type="image/x-icon">
+		
+		<title> Cadastro </title>
+	</head>
+	<body>
+		<header>
+            <nav class="navbar navbar-light bg-transparent">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">
+                        <img id="logo" src="../imgs/circulosolidario.png" alt="Círculo Solidário"> Círculo Solidário
+                    </a>
+                    <div class="d-flex">
+                        <a class="nav-link" aria-current="page" href="#comunicacao">Contato</a>
+                        <a class="nav-link" aria-current="page" href="#informacoes">Mais informações</a>
+                        <a class="nav-link active" id="entrar-menu" href="entrar.html"><button class="btn-outline-secondary">entrar</button></a> 
+                    </div>
+                </div>
+            </nav>
+        </header>
+		<div id="conteudo">
+			<h1 id=titulo> Cadastre-se </h1>
+			<label for="formdoador">
+				<input onclick="formdoador()" id="formdoador" type="radio" name="cadastro" value="Represento Doador">
+				Represento Doador</label>
+			<form id="formularioD"  action="home.html" method="get">
+				<div class="col-md-6">
+					<label for="nome-doador" class="form-label">
+						Nome
+					</label>
+					<input type="text" class="form-control" name="nome" id="nome-doador"  required>
+				</div>
+				<div class="col-md-6">
+					<label for="email-doador" class="form-label">
+					Email
+					</label>
+					<input type="text" class="form-control" name="email" id="email-doador" required>
+				</div>
+				<div class="col-md-5">
+					<label for="senha-doador" class="form-label">
+						Senha
+					</label>
+					<input type="password" class="form-control" name="senha" id="senha-doador" required>
+				</div>
+				<button class="botao btn-primary">Concluído</button>
+			</form>
+			<div class="mb-3">
+				<label>
+					<input onclick="forminstituicao()" type="radio" name="cadastro" value="Represento Instituição">
+					Represento Instituição
+				</label>
+			</div>
+
+			<form id="formularioI" action="perfil_inst.html" method="get">
+				<div class="col-md-6">
+				<label for="nome-instituicao" class="form-label">
+					Nome
+				</label>
+				<input type="text" class="form-control" name="nome" id="nome-instituicao" required>
+				</div>
+				<div class="col-md-6">
+					<label for="cnpj" class="form-label">
+						CNPJ
+					</label>
+					<input type="text" class="form-control" name="cnpj" id="cnpj" onkeypress="$(this).mask('00.000.000/0000-00')" placeholder="00.000.000/0000-00" required>
+				</div>
+				<div class="col-md-5">
+					<label for="senha" class="form-label">
+						Senha
+					</label>
+					<input type="password" class="form-control" name="senha" id="senha" required>
+				</div>
+				<div class="col-12">
+					<label for="inputAddress" class="form-label">Endereço</label>
+					<input type="text" class="form-control" id="inputAddress" placeholder="nº, Rua, Bairro">
+				</div>
+				<div class="col-12">
+					<label for="inputAddress2" class="form-label">Endereço 2</label>
+					<input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, estúdio, ou andar">
+				</div>
+				<div class="col-md-6">
+					<label for="inputCity" class="form-label">Cidade</label>
+					<input type="text" class="form-control" id="inputCity">
+				</div>
+				<div class="col-md-4">
+					<label for="inputState" class="form-label">Estado</label>
+					<select id="inputState" class="form-select">
+						<option selected>Escolher...</option>
+						<option>Acre</option>
+						<option>Alagoas</option>
+						<option>Amapá</option>
+						<option>Amazonas</option>
+						<option>Bahia</option>
+						<option>Ceará</option>
+						<option>Espírito Santo</option>
+						<option>Goiás</option>
+						<option>Maranhão</option>
+						<option>Mato Grosso</option>
+						<option>Mato Grosso do Sul</option>
+						<option>Minas Gerais</option>
+						<option>Pará</option>
+						<option>Paraíba</option>
+						<option>Paraná</option>
+						<option>Pernanbuco</option>
+						<option>Piauí</option>
+						<option>Rio de Janeiro</option>
+						<option>Rio Grande do Norte</option>
+						<option>Rio Grande do Sul</option>
+						<option>Rondônia</option>
+						<option>Roraima</option>
+						<option>Santa Catarina</option>
+						<option>São Paulo</option>
+						<option>Sergipe</option>
+						<option>Tocantins</option>
+						<option>Distrito Federal</option>
+					</select>
+				</div>
+				<div class="mt-5">
+					<label for="appt"><p class="fs-5 pb-0">Dias da semana e horário que a instituição recebe doação:</p></label>
+					<div class="">
+							<input type="checkbox" class="dia-semana" name="domingo" value="Domingo">
+							<label for="dia-semana">
+								Domingo
+							</label>
+							<input type="checkbox" class="dia-semana ms-3" name="segunda" value="Segunda">
+							<label for="dia-semana">
+								Segunda
+							</label>
+							<input type="checkbox" class="dia-semana ms-3" name="terça" value="Terça">
+							<label for="dia-semana">
+								Terça
+							</label>
+							<input type="checkbox" class="dia-semana ms-3" name="quarta" value="Quarta">
+							<label for="dia-semana">
+								Quarta
+							</label>
+							<input type="checkbox" class="dia-semana ms-3" name="quinta" value="Quinta">
+							<label for="dia-semana">
+								Quinta
+							</label>
+							<input type="checkbox" class="dia-semana ms-3" name="sexta" value="Sexta">
+							<label for="dia-semana">
+								Sexta
+							</label>
+							<input type="checkbox" class="dia-semana ms-3" name="sabado" value="Sábado">
+							<label for="dia-semana">
+								Sábado
+							</label>
+					</div>
+					<input type="time" class="appt" name="appt"required>
+					<small>  às  </small><input type="time" class="appt" name="appt"required>
+				</div>
+				<div class="">
+					<label for="appt">Segundo Horário:</label>
+					<div>
+						<input type="checkbox" class="dia-semana" name="domingo" value="Domingo">
+						<label for="dia-semana">
+							Domingo
+						</label>
+						<input type="checkbox" class="dia-semana ms-3" name="segunda" value="Segunda">
+						<label for="dia-semana">
+							Segunda
+						</label>
+						<input type="checkbox" class="dia-semana ms-3" name="terça" value="Terça">
+						<label for="dia-semana">
+							Terça
+						</label>
+						<input type="checkbox" class="dia-semana ms-3" name="quarta" value="Quarta">
+						<label for="dia-semana">
+						Quarta
+						</label>
+						<input type="checkbox" class="dia-semana ms-3" name="quinta" value="Quinta">
+						<label for="dia-semana">
+							Quinta
+						</label>
+						<input type="checkbox" class="dia-semana ms-3" name="sexta" value="Sexta">
+						<label for="dia-semana">
+							Sexta
+						</label>
+						<input type="checkbox" class="dia-semana ms-3" name="sabado" value="Sábado">
+						<label for="dia-semana">
+							Sábado
+						</label>
+					</div>
+					<input type="time" class="appt" name="appt">
+					<small>  às  </small><input type="time" id="appt" name="appt">
+				</div>
+				<div class="">
+					<label for="appt">Terceiro Horário:</label>
+					<div>
+						<input type="checkbox" class="dia-semana" name="domingo" value="Domingo">
+						<label for="dia-semana">
+							Domingo
+						</label>
+						<input type="checkbox" class="dia-semana ms-3" name="segunda" value="Segunda">
+						<label for="dia-semana">
+							Segunda
+						</label>
+						<input type="checkbox" class="dia-semana ms-3" name="terça" value="Terça">
+						<label for="dia-semana">
+							Terça
+						</label>
+						<input type="checkbox" class="dia-semana ms-3" name="quarta" value="Quarta">
+						<label for="dia-semana">
+							Quarta
+						</label>
+						<input type="checkbox" class="dia-semana ms-3" name="quinta" value="Quinta">
+						<label for="dia-semana">
+							Quinta
+						</label>
+						<input type="checkbox" class="dia-semana ms-3" name="sexta" value="Sexta">
+						<label for="dia-semana">
+							Sexta
+						</label>
+						<input type="checkbox" class="dia-semana ms-3" name="sabado" value="Sábado">
+						<label for="dia-semana">
+							Sábado
+						</label>
+					</div>
+					<input type="time" class="appt" name="appt">
+					<small>  às  </small><input type="time" class="appt" name="appt">
+				</div><button class="botao btn-primary">Concluído</button>
+			</form>
+		</div>
+		<footer>
+            <section class="row pb-0">
+                <article id="informacoes" class="col-5 mx-auto">
+                    <p>Fundadoras:</p>
+                    <img src="../imgs/ana-100.jpeg" alt="">
+                    <p class="pb-0"> Ana Paula Rosa, Estudante do Instituto Federal de Educação, Ciência e Tecnologia (IFSP) em Bragança Paulista, SP.</p>
+                    <img src="../imgs/tais-100.jpg" alt="">
+                    <p class="pb-0">Taís Barbosa Rodrigues, Estudante do Instituto Federal de Educação, Ciência e Tecnologia (IFSP) em Bragança Paulista, SP. </p>
+                </article>
+                <article id="comunicacao" class="col-5 mx-auto">
+                    <p>Comunicação:</p>
+                    <p class="pb-0">E-mail: <a href="mailto:conexaosolidariaa@gmail.com">conexaosolidariaa@gmail.com</a></p>
+                </article>
+                <p class="text-sm-center pb-0">Desenvolvido por... 2022...</p>
+            </section>
+        </footer>
+		<script src="../jsArquivos/scripts.js"></script>
+	</body>
+</html>
