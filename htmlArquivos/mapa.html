@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../cssArquivos/estilo.css">
+        <link rel="stylesheet"type="text/css"href="../cssBootstrap/bootstrap.css">
+        <link rel="shortcut icon" href="../icones/favicon.ico" type="image/x-icon">
+
+        <title>Mapa</title>
+
+    </head>
+    <body>
+        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.494655481752!2d-46.6340885!3d-23.
+        5506715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59abb2b2eef1%3A0xfdb32e67a44103f5!2sCatedral
+        %20Metropolitana%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1627310597141!5m2!1spt-BR!2sbr" 
+        width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>-->
+        <header>
+            <nav class="navbar navbar-light bg-transparent">
+                <div class="container-fluid">
+                    <a href="index.html" class="navbar-brand">
+                        <img id="logo" src="../imgs/circulosolidario.png" alt="Círculo Solidário"> Círculo Solidário
+                    </a>
+                    <div class="d-flex">
+                        <a class="nav-link" aria-current="page" href="#comunicacao">Contato</a>
+                        <a class="nav-link" aria-current="page" href="#informacoes">Mais informações</a>
+                        <a class="nav-link" aria-current="page" href="home.html"><img class="icone-links" src="../icones/home.png" alt=""></a>
+                        <a class="nav-link" aria-current="page" href="perfil_doador.html"><img class="icone-links" src="../icones/perfil.png" alt=""></a>  
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="conteudo">
+            <h1>Mapa das instituições</h1>
+            <div class="row justify-content-start pb-2">
+                <div class="col-5 pt-1">
+                    
+                    <form action="" id="formlario">
+                        <label for="endereco"><strong>Cidade/UF:</strong></label>
+                        <input type="text" id="endereco">
+                        <input type="submit" value="buscar">
+                    </form>
+                </div>
+                <div class="col-3 pb-0 pt-3 btn-success fs-5">
+                    <a href="#" class="dropdown-item">Sua localização atual</a>
+                </div>
+            </div>
+            <iframe class="container d-mapa" src="https://www.google.com/maps/d/embed?mid=1y-HU5BKpBQ5J0pCH7gUuvhHTJKm2tnUj"></iframe>
+        </div>
+        <footer>
+            <section class="row pb-0">
+                <article id="informacoes" class="col-5 mx-auto">
+                    <p>Fundadoras:</p>
+                    <img src="../imgs/ana-100.jpeg" alt="">
+                    <p class="pb-0"> Ana Paula Rosa, Estudante do Instituto Federal de Educação, Ciência e Tecnologia (IFSP) em Bragança Paulista, SP.</p>
+                    <img src="../imgs/tais-100.jpg" alt="">
+                    <p class="pb-0">Taís Barbosa Rodrigues, Estudante do Instituto Federal de Educação, Ciência e Tecnologia (IFSP) em Bragança Paulista, SP. </p>
+                </article>
+                <article id="comunicacao" class="col-5 mx-auto">
+                    <p>Comunicação:</p>
+                    <p class="pb-0">E-mail: <a href="mailto:conexaosolidariaa@gmail.com">conexaosolidariaa@gmail.com</a></p>
+                </article>
+                <p class="text-sm-center pb-0">Desenvolvido por... 2022...</p>
+            </section>
+        </footer>
+    </body>
+</html>

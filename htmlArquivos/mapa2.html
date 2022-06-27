@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../cssArquivos/estilo.css">
+        <link rel="stylesheet"type="text/css"href="../cssBootstrap/bootstrap.css">
+        <link rel="shortcut icon" href="../icones/favicon.ico" type="image/x-icon">
+        <title>Mapa</title>
+        <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+        <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+        <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+
+    </head>
+    <body>
+        <div id="conteudo">
+            <h1>Mapa das instituições</h1>
+            <form action="" id="formlario">
+                <input type="text" id="endereco">
+                <input type="submit">
+            </form>
+            <button id="user-location">Minha localização</button>
+            <div class="d-mapa" id="mapContainer"></div>
+        </div>
+        <script src="../jsArquivos/scripts.js"></script>
+    </body>
+</html>

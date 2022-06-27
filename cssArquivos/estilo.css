@@ -1,0 +1,209 @@
+html{
+	align-items: center;
+	margin: 2%;
+	padding: 0%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+#conteudo{ 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 60px;
+	padding-right: 60px;
+	background-color: #fff; 
+}
+#aba{
+	padding-left: 10px;
+	background-color: #3d3d3da9;
+}
+#nav-container{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+#formularioD{
+    display: none
+}
+#formularioI{
+    display: none
+}
+#logo{
+	width: 75px;
+}
+#navbar-links a {
+	color: #000;
+	width: 10%;
+}
+#resumo-instituicao{
+	border-radius: 0.5em;
+}
+@media (max-width: 800px){
+	.media{
+		width: 35%;
+	}
+}
+@media (max-width: 700px){
+	.media{
+		width: 45%;
+	}
+}
+@media (max-width: 600px){
+	.media{
+		width: 52%;
+	}
+}
+@media (max-width: 450px){
+	.media{
+		width: 60%;
+	}
+}
+@media (max-width: 350px){
+	.media{
+		width: 65%;
+	}
+}
+@media (max-width: 250px){
+	.media{
+		width: 70%;
+	}
+}
+.resumo{
+	width: 60%;
+	padding-top: 3%;
+}
+.espaco03{
+	line-height: 20px;
+}
+.espaco04{
+	line-height: 15px;
+}
+.LinhaDoTempo{
+	width: 70%;
+}
+.tais{
+	width: 50%;
+}	
+.ana{
+	width: 50%;
+}
+div.fundadoras{
+	width: 600px;
+}
+header{
+	background-color: #fff;
+}
+.lista{
+
+}
+ul.lista li{
+	width: 60%;
+	list-style-type: none;
+	background-color: #ffbb94;
+	border-bottom: 0.1rem solid;
+	border-color: #000;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.btn-doacao{
+	background-color: #ff9d65;
+	border: #000 solid 0.05rem;
+}
+.btn-doacao:hover{
+	background-color: #d17038;
+}
+.btn-doacao:active{
+	background-color: #ffbb94;
+}
+.botao:active {
+	color: #6c757d;
+	border-color: #6c757d;
+	background-color: #ffffff;
+}  
+.capa{
+	width: 70%;
+}
+.distancia{
+	padding-top: 40px;
+}
+.gradient-1{
+	background-image: linear-gradient(45deg , #f4f8ff, #e9f2ff,#d2e5ff, #B1D3FF);
+}
+.navbar-brand{
+	padding: 0;
+	color: #000;
+}
+.navbar-brand:hover{
+	color: #000;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+	padding: 1rem .8rem;
+}
+.d-mapa{
+	width: 920px;
+	height: 580px;
+}
+.direita00{
+	width: 35%;
+	float: right;
+}
+.esquerda00{
+	background-color: rgba(0, 110, 255, 0.199);
+}
+.form-login{
+	background-color: rgba(156, 156, 156, 0.103);
+	width: 60%;
+	box-shadow: 5px 5px 5px rgba(255, 115, 0, 0.493);
+	margin-right: 6%;
+}
+.circulo-grande{
+	width: 200px;
+}
+.icone-links{
+	width: 30px;
+}
+footer{
+	background-color: #ffbb94;
+	padding: 25px;
+}
+img.img0{
+	width: 3%
+}
+img.img1{
+	width: 5%;
+}
+img.img2{
+	width: 10%
+}
+img.img3{
+	width: 20%
+}
+img.img4{
+	width: 45%
+}
+img.img5{
+	width: 12%;
+}
+img.img6{
+	width: 55%;
+}
+img.img7{
+	width: 72%;
+}
+.logo-float{
+	color: #000;
+	width: 24%;
+	margin-left: 7%;
+}
+.pb-0{
+	line-height: 25px;
+}
+.sobre{
+	color: #000;
+	text-decoration: underline;
+}
+.search-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: transla;
+}
+
