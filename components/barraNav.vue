@@ -23,7 +23,11 @@ export default {}
 </script>
 
 <style>
-
+.logo-float{
+	color: #000;
+	width: 24%;
+	margin-left: 7%;
+}
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
@@ -42,6 +46,9 @@ export default {}
   text-decoration: none;
   white-space: nowrap;
 }
+#logo{
+	width: 75px;
+}
 .container,
 .container-fluid,
 .container-xxl,
@@ -57,6 +64,9 @@ export default {}
 }
 .bg-transparent {
   background-color: transparent !important;
+}
+.icone-links{
+	width: 30px;
 }
 .navbar {
   position: relative;
@@ -78,40 +88,6 @@ export default {}
   flex-wrap: inherit;
   align-items: center;
   justify-content: space-between;
-}
-.navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
-}
-.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-  color: rgba(0, 0, 0, 0.9);
-}
-.navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.55);
-}
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.7);
-}
-.navbar-light .navbar-nav .nav-link.disabled {
-  color: rgba(0, 0, 0, 0.3);
-}
-.navbar-light .navbar-nav .show > .nav-link,
-.navbar-light .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.9);
-}
-.navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.55);
-  border-color: rgba(0, 0, 0, 0.1);
-}
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-.navbar-light .navbar-text {
-  color: rgba(0, 0, 0, 0.55);
-}
-.navbar-light .navbar-text a,
-.navbar-light .navbar-text a:hover,
-.navbar-light .navbar-text a:focus {
-  color: rgba(0, 0, 0, 0.9);
 }
 
 </style>

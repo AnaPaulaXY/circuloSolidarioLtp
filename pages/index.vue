@@ -47,6 +47,10 @@ export default {
 .fs-5 {
   font-size: 1.25rem !important;
 }
+.d-mapa{
+	width: 920px;
+	height: 580px;
+}
 .btn-success {
   color: #fff;
   background-color: #198754;
