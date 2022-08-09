@@ -1,20 +1,17 @@
 <template>
-  <div>
+  <div class="body">
     <barra-nav></barra-nav>
     <main id="conteudo">
       <section class="row justify-content-start">
         <article class="col-4 esquerda00">
           <img class="img4" src="../static/canil.jpg" alt="" /><br />
           <p class="pb-0">Canil</p>
-          <a class="sobre" href="#"
-            ><p class="espaco04">Endereço e horário para doar</p></a
-          >
+          <a class="sobre" href="#"><p class="espaco04">Endereço e horário para doar</p></a>
           <button
             onclick="function_text()"
             id="funcao_btn"
             class="btn-doacao btn"
-            type="submit"
-          >
+            type="submit">
             Adicionar doação
           </button>
         </article>
@@ -49,6 +46,17 @@ export default {
 </script>
 
 <style>
+.body{
+  margin: 0;
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 4.5;
+  color: #212529;
+  background-color: #ff9d65;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 .pb-0 {
   line-height: 25px;
 }
